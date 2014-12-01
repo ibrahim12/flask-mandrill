@@ -75,7 +75,7 @@ class Mandrill(object):
             'ip_pool': kwargs.pop('ip_pool', ''),
             'key': kwargs.pop('key', self.api_key),
             'template_nmae' : kwargs.pop('template_nmae', ''),
-            'template_content' : kwargs.pop('template_content', '')
+            'template_content' : kwargs.pop('template_content', ''),
             'message': kwargs,
         }
         data['message'].setdefault('from_email',
