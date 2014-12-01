@@ -14,7 +14,7 @@ class Mandrill(object):
         self.api_key = app.config['MANDRILL_API_KEY']
         self.app = app
 
-    def _check_config():
+    def _check_config(self):
         if not self.api_key:
             raise ValueError('No Mandrill API key has been configured')
 
